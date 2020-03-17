@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-result=$(./cyRating-check.py $1 $2 $3)
+result=$(/cyRating-check.py $1 $2 $3)
 parsedResult=(${result//:/ })
 if [ ${parsedResult[0]} == 'ok' ]; then
   echo ::set-output name=cy-rating::${parsedResult[1]}
