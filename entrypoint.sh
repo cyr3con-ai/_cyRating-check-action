@@ -1,4 +1,4 @@
-#!/bin/sh -l
+#!/usr/bin/env bash
 
 result=$(/cyRating-check.py $1 $2 $3)
 parsedResult=(${result//:/ })
