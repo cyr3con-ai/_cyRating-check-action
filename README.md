@@ -33,3 +33,5 @@ with:
   cve: CVE-2019-17549
 ...
 ```
+
+Sample workflows using this action can be found in a [dedicated repository](https://github.com/cyr3con-ai/cyRating-check-action-examples/actions).
