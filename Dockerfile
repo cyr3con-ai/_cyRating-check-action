@@ -5,9 +5,7 @@ RUN apk add --no-cache bash
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir requests
 
-COPY cyRating-check.py /scripts/cyRating-check.py
-COPY entrypoint.sh /scripts/entrypoint.sh
+COPY cyRating-check.py /cyRating-check.py
+COPY entrypoint.sh /entrypoint.sh
 
-WORKDIR /scripts
-
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
