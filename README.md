@@ -14,7 +14,7 @@ This action returns cyRating value for a given CVE number.
 
 ### `cve`
 
-**Required** CVE number for which cyRating have to be checked. 
+**Required** CVE number for which cyRating have to be checked.
 
 ## Outputs
 
