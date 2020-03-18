@@ -4,16 +4,16 @@ import sys
 import requests
 
 if len(sys.argv) != 4:
-  print('error:Invalid number of arguments. CVE, ACCESS_TOKEN, and SECRET_TOKEN are required.')
+  print('error:Invalid number of arguments. ACCESS_TOKEN, SECRET_TOKEN, and CVE are required.')
   sys.exit(1)
 
 url = 'https://apigargoyle.com/v1/plugins/github-actions/cyrating-check'
-params = {
-  'vulnerabilityId': sys.argv[1]
-}
 headers = {
-  'userId': sys.argv[2], 
-  'apiKey': sys.argv[3]
+  'userId': sys.argv[1], 
+  'apiKey': sys.argv[2]
+}
+params = {
+  'vulnerabilityId': sys.argv[3]
 }
 
 try:

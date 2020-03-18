@@ -1,13 +1,13 @@
 name: 'cyRating check'
 inputs:
-  cve:
-    description: 'CVE to check'
-    required: true
   access-token:
     description: 'Access token to authenticate usage'
     required: true
   secret-token:
     description: 'Secret token to authenticate usage'
+    required: true
+  cve:
+    description: 'CVE to check'
     required: true
 outputs:
   cy-rating:
@@ -16,6 +16,6 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.cve }}
     - ${{ inputs.access-token }}
     - ${{ inputs.secret-token }}
+    - ${{ inputs.cve }}
