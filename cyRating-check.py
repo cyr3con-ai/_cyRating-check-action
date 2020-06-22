@@ -9,8 +9,8 @@ if len(sys.argv) != 4:
 
 url = 'https://apigargoyle.com/v1/plugins/github-actions/cyrating-check'
 headers = {
-  'userId': sys.argv[1], 
-  'apiKey': sys.argv[2]
+  'access-token': sys.argv[1], 
+  'secret-token': sys.argv[2]
 }
 params = {
   'vulnerabilityId': sys.argv[3]
