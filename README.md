@@ -26,7 +26,7 @@ The cyRating value for a given CVE number.
 
 ```yaml
 ...
-uses: cyr3con-ai/cyRating-check-action@v1
+uses: cyr3con-ai/cyRating-check-action@v2
 with:
   access-token: ${{ secrets.CY_RATING_CHECK_ACTION_ACCESS_TOKEN }}
   secret-token: ${{ secrets.CY_RATING_CHECK_ACTION_SECRET_TOKEN }}
